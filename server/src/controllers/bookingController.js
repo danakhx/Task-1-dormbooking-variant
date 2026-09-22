@@ -46,9 +46,6 @@ async function hasConflict(roomNumber, startDate, endDate, excludeId = null) {
   return existingBooking !== null;
 }
 
-// GET /api/bookings
-// TODO: implement per README.md section 3.
-
 export async function getAllBookings(req, res, next) {
   try {
     const bookings = await Booking.find()
